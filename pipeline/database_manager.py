@@ -69,8 +69,8 @@ def main():
     group.add_argument("--create", action="store_true" , help="Create the database")
     group.add_argument("--destroy", action="store_true" , help="Destroy the database")
 
-    parser.add_argument("--database-path",type=str,help="Path to the database")
-    parser.add_argument("--ddl-query-parent-dir",type=str,help="Path to the parent directory of the ddl queries")
+    parser.add_argument("--database_path",type=str,help="Path to the database")
+    parser.add_argument("--ddl_query_parent_dir",type=str,help="Path to the parent directory of the ddl queries")
     
     args = parser.parse_args()
     
